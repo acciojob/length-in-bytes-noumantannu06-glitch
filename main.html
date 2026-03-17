@@ -8,6 +8,38 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	  <h1>🧮 Byte Size Calculator</h1>
+    
+    <div class="input-group">
+        <label for="inputText">Enter text (ASCII or Unicode):</label>
+        <textarea id="inputText" placeholder="Try '안녕하세요' or '😀'...">hello world</textarea>
+        <br><br>
+        <button onclick="calculate()">Calculate Byte Size</button>
+    </div>
+
+    <div id="result" class="result" style="display: none;">
+        <strong>Results:</strong><br>
+        <span id="output"></span>
+    </div>
+
+    <div class="examples">
+        <div class="example">
+            <strong>ASCII:</strong><br>
+            byteSize('hello world') → <strong>11</strong>
+        </div>
+        <div class="example">
+            <strong>Korean:</strong><br>
+            byteSize('안녕하세요') → <strong>15</strong>
+        </div>
+        <div class="example">
+            <strong>Empty:</strong><br>
+            byteSize('') → <strong>0</strong>
+        </div>
+        <div class="example">
+            <strong>Emoji:</strong><br>
+            byteSize→ <strong>4</strong>
+        </div>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
