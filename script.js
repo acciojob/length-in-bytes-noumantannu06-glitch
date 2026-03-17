@@ -1,9 +1,14 @@
 const byteSize = (str) => {
   // write your code herefunction byteSize(str) {
-          function byteSize(str) {
-    const blob = new Blob([str]); // Create a new Blob object with the input string
-    return blob.size; // Return the size of the Blob in bytes
+         function byteSize(str) {
+    const blob = new Blob([str]);
+    return blob.size; 
 }
+
+// Testing the function
+console.log(byteSize('hello world')); 
+console.log(byteSize('안녕하세요'));   
+console.log(byteSize(''));  
 };
 
 // Do not change the code below
